@@ -5,38 +5,33 @@ namespace LoginAvalonia.ViewModels;
 
 public partial class MainViewModel : ViewModelBase
 {
-    private bool _isLoggedIn = false;
-    
-    [ObservableProperty]
-    private string _greeting = "Benvenuto! Effettua l'accesso.";
-    
-    [ObservableProperty]
-    private string _username = string.Empty;
-    
-    [ObservableProperty]
-    private string _buttonText = "LOGIN";
-    
+    private bool _utenteAutenticato;
+
+    [ObservableProperty] private string _messaggioBenvenuto = "Effettua l'accesso.";
+    [ObservableProperty] private string _nomeUtente = string.Empty;
+    [ObservableProperty] private string _testoPulsante = "ACCEDI";
+
     [RelayCommand]
-    private void ExecuteLogin()
+    private void EseguiLogin()
     {
-        if (!_isLoggedIn)
+        if (!_utenteAutenticato)
         {
-            if (string.IsNullOrWhiteSpace(Username))
+            if (string.IsNullOrWhiteSpace(NomeUtente))
             {
-                Greeting = "Per favore, inserisci un nome!";
+                MessaggioBenvenuto = "Inserisci un nome";
                 return;
             }
 
-            Greeting = $"Benvenuto/a {Username}";
-            ButtonText = "LOGOUT";
-            _isLoggedIn = true;
+            MessaggioBenvenuto = $"Benvenuto/a, {NomeUtente}!";
+            TestoPulsante = "ESCI";
+            _utenteAutenticato = true;
         }
         else
         {
-            Greeting = "Arrivederci!";
-            Username = string.Empty; 
-            ButtonText = "LOGIN";
-            _isLoggedIn = false;
+            MessaggioBenvenuto = "Arrivederci";
+            NomeUtente = string.Empty; 
+            TestoPulsante = "ACCEDI";
+            _utenteAutenticato = false;
         }
     }
 }
