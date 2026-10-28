@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAvalonia", "LoginAvalonia\LoginAvalonia.csproj", "{A55740BE-BDDD-4265-A6AB-33233EDEDF6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAvalonia.Android", "LoginAvalonia.Android\LoginAvalonia.Android.csproj", "{5CB74C9C-3927-4B61-9586-60E502E47907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAvalonia.Desktop", "LoginAvalonia.Desktop\LoginAvalonia.Desktop.csproj", "{BB36CAF0-011B-40CF-9C0B-40EC6C74DA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAvalonia.iOS", "LoginAvalonia.iOS\LoginAvalonia.iOS.csproj", "{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginAvalonia.Browser", "LoginAvalonia.Browser\LoginAvalonia.Browser.csproj", "{171F510F-DCAC-4C76-ADA5-68CBB2930F8F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A55740BE-BDDD-4265-A6AB-33233EDEDF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55740BE-BDDD-4265-A6AB-33233EDEDF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55740BE-BDDD-4265-A6AB-33233EDEDF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55740BE-BDDD-4265-A6AB-33233EDEDF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB74C9C-3927-4B61-9586-60E502E47907}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BB36CAF0-011B-40CF-9C0B-40EC6C74DA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB36CAF0-011B-40CF-9C0B-40EC6C74DA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB36CAF0-011B-40CF-9C0B-40EC6C74DA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB36CAF0-011B-40CF-9C0B-40EC6C74DA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFEC01D3-8F59-45C5-B7FB-0DBB88BDE4A3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{171F510F-DCAC-4C76-ADA5-68CBB2930F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171F510F-DCAC-4C76-ADA5-68CBB2930F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171F510F-DCAC-4C76-ADA5-68CBB2930F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171F510F-DCAC-4C76-ADA5-68CBB2930F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
