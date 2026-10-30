@@ -1,3 +1,4 @@
+using System.Linq;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -10,6 +11,7 @@ public partial class MainViewModel : ViewModelBase
     [ObservableProperty] private string _messaggioBenvenuto = "Effettua l'accesso.";
     [ObservableProperty] private string _nomeUtente = string.Empty;
     [ObservableProperty] private string _testoPulsante = "ACCEDI";
+    
 
     [RelayCommand]
     private void EseguiLogin()
@@ -33,5 +35,12 @@ public partial class MainViewModel : ViewModelBase
             TestoPulsante = "ACCEDI";
             _utenteAutenticato = false;
         }
+    }
+    public MainViewModel()
+    {
+        InitializeComponent();
+        Nomi.ItemsSource = new string[]
+                {"Nome1", "Nome2"}
+            .OrderBy(x => x);
     }
 }

@@ -17,11 +17,13 @@
                    TextAlignment="Center"/>
         
         <TextBox Text="{Binding NomeUtente}" 
-                 Watermark="Inserisci il tuo nome..." />
+                 PlaceholderText="Inserisci il tuo nome..." />
         
         <Button Content="{Binding TestoPulsante}" 
                 Command="{Binding EseguiLoginCommand}" 
                 HorizontalAlignment="Stretch" />
+        
+        <ListBox x:Name="Nomi"/>
         
     </StackPanel>
 </UserControl>
